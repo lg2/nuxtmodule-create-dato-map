@@ -27,7 +27,6 @@ export default async function createDatoMap() {
       );
 
       if (entryArray) {
-        console.log("entryArray", entryArray);
         const entry = {
           path: route.path,
           params: [],
