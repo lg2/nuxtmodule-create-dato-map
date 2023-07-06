@@ -1,4 +1,4 @@
-import linkResolverJSON from "/assets/jsons/link-resolver.json";
+import linkResolverJSON from "./../../../assets/jsons/link-resolver.json";
 const fs = require("fs");
 
 async function checkHeadersFile() {
