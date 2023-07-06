@@ -1,6 +1,6 @@
 {
   "name": "@lg2/nuxtmodule-create-dato-map",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "consent gtm",
   "main": "index.js",
   "scripts": {
