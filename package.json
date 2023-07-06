@@ -1,0 +1,23 @@
+{
+  "name": "@lg2/nuxtmodule-create-dato-map",
+  "version": "0.0.1",
+  "description": "consent gtm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:lg2/nuxtmodule-create-dato-map.git"
+  },
+  "author": "romain avalle",
+  "license": "ISC",
+  "homepage": "https://github.com/lg2/nuxtmodule-create-dato-map.git#readme",
+  "bugs": {
+    "url": "https://github.com/lg2/nuxtmodule-create-dato-map.git/issues"
+  },
+  "keywords": [
+    "nuxt",
+    "module"
+  ]
+}
