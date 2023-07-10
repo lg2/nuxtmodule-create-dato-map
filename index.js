@@ -4,7 +4,7 @@ const fs = require("fs");
 async function checkHeadersFile() {
   const headersFilePath = "./static/_headers";
   const lineToAdd =
-    "\n/dato-route-map.json\n  Access-Control-Allow-Origin: 'https://plugins-cdn.datocms.com' \n";
+    "\n/dato-route-map.json\n  Access-Control-Allow-Origin: *\n";
   if (fs.existsSync(headersFilePath)) {
     const fileContent = fs.readFileSync(headersFilePath, "utf8");
     if (!fileContent.includes(lineToAdd)) {
