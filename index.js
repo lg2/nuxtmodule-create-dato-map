@@ -17,9 +17,10 @@ async function checkHeadersFile() {
 }
 
 export default async function createDatoMap() {
-  await this.nuxt.hook("build:done", async (nuxt) => {
+  await this.nuxt.hook("build:extendRoutes", async (routes) => {
     const array = [];
-    nuxt.routes.forEach((route) => {
+    console.log(routes);
+    routes.forEach((route) => {
       const entryArray = Object.entries(linkResolverJSON).find(
         (entry) =>
           (entry[1].name === route.name) |
