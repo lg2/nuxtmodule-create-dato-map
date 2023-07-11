@@ -17,9 +17,9 @@ async function checkHeadersFile() {
 }
 
 export default async function createDatoMap() {
-  await this.nuxt.hook("build:extendRoutes", async (routes) => {
+  return await this.nuxt.hook("build:extendRoutes", async (routes) => {
+    console.log('dato route map - START!')
     const array = [];
-    console.log(routes);
     routes.forEach((route) => {
       const entryArray = Object.entries(linkResolverJSON).find(
         (entry) =>
@@ -46,7 +46,6 @@ export default async function createDatoMap() {
       }
     });
     // write a function that check if the file ./static/headers exists. If it exists check if the file as already a ligne with '/dato-route-map.json' if not add it. If the file do not exist create it and add the ligne '/dato-route-map.json' in it.
-    await checkHeadersFile();
     await fs.writeFile(
       "./static/dato-route-map.json",
       JSON.stringify(array),
@@ -56,5 +55,8 @@ export default async function createDatoMap() {
         }
       }
     );
+    await checkHeadersFile();
+    console.log('dato route map - DONE!')
+    return true;
   });
 }
