@@ -43,7 +43,7 @@ async function checkJSONFile(array) {
 }
 
 export default async function createDatoMap() {
-  return await this.nuxt.hook("build:extendRoutes", async (routes) => {
+  return await this.nuxt.hook("build:done", async (routes) => {
     console.log("dato route map - START!");
     const array = [];
     routes.forEach((route) => {
