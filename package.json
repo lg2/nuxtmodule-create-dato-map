@@ -1,7 +1,7 @@
 {
   "name": "@lg2/nuxtmodule-create-dato-map",
   "version": "0.0.18",
-  "description": "consent gtm",
+  "description": "create route map for datoCms",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
